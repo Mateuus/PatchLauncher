@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading;
-using SkinFramework;
+//using SkinFramework;
 using CSLauncher.Updater;
 using System.Diagnostics;
 using System.IO;
@@ -113,7 +113,7 @@ namespace CSLauncher
         private void frmLauncher_Load(object sender, EventArgs e)
         {
             Thread thr_ = new Thread(new ThreadStart(DoUpdate));
-            thr_.IsBackground = true;
+            thr_.IsBackground = false;
             thr_.Start();
         }
 

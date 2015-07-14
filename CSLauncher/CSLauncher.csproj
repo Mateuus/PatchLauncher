@@ -69,11 +69,15 @@
     <Compile Include="Updater\IVersion.cs" />
     <Compile Include="Updater\VersionConfig.cs" />
     <Compile Include="Util.cs" />
+    <EmbeddedResource Include="frmLauncher.ii.resx">
+      <DependentUpon>frmLauncher.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmOptions.resx">
       <DependentUpon>frmOptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLauncher.resx">
       <DependentUpon>frmLauncher.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,6 +104,11 @@
     <Content Include="Configs\remote\DeleteConfig.txt" />
     <Content Include="Configs\remote\RemoteConfig.txt" />
     <Content Include="Configs\local\Version.txt" />
+    <None Include="Resources\painel_login.png" />
+    <None Include="Resources\menu_login.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\backgroundimg.png" />
+    <None Include="Resources\appbar.minimized.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
