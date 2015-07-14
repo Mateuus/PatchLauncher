@@ -10,11 +10,18 @@ using System.Threading;
 using CSLauncher.Updater;
 using System.Diagnostics;
 using System.IO;
+using System.Net;
 
 namespace CSLauncher
 {
     public partial class frmLauncher : Form 
     {
+
+        //var's
+        int TogMove;
+        int MValX;
+        int MValY;
+     
         public frmLauncher()
         {
             InitializeComponent();
@@ -112,6 +119,7 @@ namespace CSLauncher
 
         private void frmLauncher_Load(object sender, EventArgs e)
         {
+
             Thread thr_ = new Thread(new ThreadStart(DoUpdate));
             thr_.IsBackground = false;
             thr_.Start();
@@ -134,10 +142,54 @@ namespace CSLauncher
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            if (File.Exists(Configs_.StartFile))
+            /*if (File.Exists(Configs_.StartFile))
                 LaunchCommandLineApp(Configs_.StartFile);
             else
-                MessageBox.Show("File not found." + Configs_.StartFile);
+                MessageBox.Show("File not found." + Configs_.StartFile);*/
+
+            label9.Visible = false;
+
+            string Username = User.Text;
+            string Password = Pass.Text;
+
+            string Risposta = new WebClient().DownloadString("http://127.0.0.1/patcher/login/login.php?username=" + Username + "&password=" + Password);
+            switch (Risposta.ToLower())
+            {
+                case "1":
+                    {
+                        label9.Text = "Conta não Registrada";
+                        label9.Visible = true;
+                        //MessageBox.Show("Conta não Registrada");
+                        break;
+                    }
+                case "2":
+                    {
+                        label9.Text = "Senha Incorreta";
+                        label9.Visible = true;
+                        // MessageBox.Show("Senha Incorreta");
+                        break;
+                    }
+                case "3":
+                    {
+
+                        string ExeType = "1rag1";
+                        string output = String.Format("-t:{0} {1} {2}", Password, Username, ExeType);
+                        Process.Start("CLambeRO.exe", output);
+
+                       
+                       ///Process.Start("CLambeRO.exe", "-t:{0} {1} {2}" + Password + Username + ExeType);
+
+                       Application.Exit();
+
+                        //MessageBox.Show("Login aceito!");
+                        break;
+                    }
+                default:
+                    {
+                        MessageBox.Show("Erro com o servidor remoto, por favor deixe-a tentar mais tarde!");
+                        break;
+                    }
+            }
         }
 
         void LaunchCommandLineApp(string FileName_)
@@ -149,7 +201,7 @@ namespace CSLauncher
             startInfo.FileName = FileName_;
             startInfo.WindowStyle = ProcessWindowStyle.Hidden;
             //connect /u127.0.0.1 /p44405
-            startInfo.Arguments = string.Format("\\main.exe connect /u{0} /p{1}", Configs_.IPAddress, Configs_.Port);
+            startInfo.Arguments = string.Format("\\ClambeRO.exe -t:{0} {1}", Configs_.IPAddress, Configs_.Port);
             try
             {
                 // Start the process with the info we specified.
@@ -167,8 +219,112 @@ namespace CSLauncher
 
         private void btnOptions_Click(object sender, EventArgs e)
         {
-            frmOptions frm_ = new frmOptions();
-            frm_.ShowDialog();
+           /* frmOptions frm_ = new frmOptions();
+            frm_.ShowDialog();*/
+            Process.Start("opensetup.exe");
+        }
+
+
+        private void User_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void User_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (User.Text == "Login")
+            {
+                User.Text = "";
+            }
+            else
+            {
+
+            }
+
+
+            Background1.BackColor = SystemColors.ButtonFace;
+            fillet1.BackColor = Color.SteelBlue;
+
+            //background2.BackColor = SystemColors.ButtonHighlight;
+            fillet2.BackColor = Color.Transparent;
+
+            background2.BorderStyle = BorderStyle.None;
+            fillet2.BorderStyle = BorderStyle.None;
+
+        }
+
+        private void Pass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pass_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (Pass.Text == "Senha")
+            {
+                Pass.Text = "";
+                Pass.UseSystemPasswordChar = true;
+            }
+            else
+            {
+
+            }
+
+
+
+            background2.BackColor = SystemColors.ButtonFace;
+            fillet2.BackColor = Color.SteelBlue;
+
+            //Background1.BackColor = SystemColors.ButtonHighlight;
+            fillet1.BackColor = Color.Transparent;
+
+            Background1.BorderStyle = BorderStyle.None;
+            fillet1.BorderStyle = BorderStyle.None;
+        }
+
+        private void fechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Minimized_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void frmLauncher_MouseDown(object sender, MouseEventArgs e)
+        {
+            TogMove = 1;
+            MValX = e.X;
+            MValY = e.Y;
+        }
+
+        private void frmLauncher_MouseUp(object sender, MouseEventArgs e)
+        {
+            TogMove = 0;
+        }
+
+        private void frmLauncher_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (TogMove == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - MValX, MousePosition.Y - MValY);
+            }
+        }
+
+        private void Login_Start_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://www.lambero.com.br");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://www.forum.lambero.com.br");
         }
 
     }

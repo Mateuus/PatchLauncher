@@ -63,6 +63,26 @@ namespace CSLauncher.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap appbar_interface_password {
+            get {
+                object obj = ResourceManager.GetObject("appbar.interface.password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap appbar_interface_textbox {
+            get {
+                object obj = ResourceManager.GetObject("appbar.interface.textbox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap appbar_minimized {
             get {
                 object obj = ResourceManager.GetObject("appbar.minimized", resourceCulture);

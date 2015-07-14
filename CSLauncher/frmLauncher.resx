@@ -117,47 +117,185 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="skinningManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>720, 420</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblPercentage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblPercentage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>576, 194</value>
+  </data>
+  <data name="lblPercentage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lblPercentage.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lblPercentage.Name" xml:space="preserve">
+    <value>lblPercentage</value>
+  </data>
+  <data name="&gt;&gt;lblPercentage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPercentage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblPercentage.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lblCurrentSize.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCurrentSize.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Courier New, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblCurrentSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>654, 404</value>
+  </data>
+  <data name="lblCurrentSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 14</value>
+  </data>
+  <data name="lblCurrentSize.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentSize.Name" xml:space="preserve">
+    <value>lblCurrentSize</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentSize.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentSize.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Courier New, 14.25pt, style=Bold</value>
+  </data>
+  <data name="btnStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 243</value>
+  </data>
+  <data name="btnStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 36</value>
+  </data>
+  <data name="btnStart.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnStart.Text" xml:space="preserve">
+    <value>INICIAR O JOGO</value>
+  </data>
+  <data name="&gt;&gt;btnStart.Name" xml:space="preserve">
+    <value>btnStart</value>
+  </data>
+  <data name="&gt;&gt;btnStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnStart.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnStart.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 21</value>
+  </data>
+  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
+    <value>progressBar1</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblCurrentVersion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCurrentVersion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Courier New, 8.25pt, style=Bold</value>
+  </data>
+  <data name="lblCurrentVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 404</value>
+  </data>
+  <data name="lblCurrentVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 14</value>
+  </data>
+  <data name="lblCurrentVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lblCurrentVersion.Text" xml:space="preserve">
+    <value>Current Version : </value>
+  </data>
+  <data name="&gt;&gt;lblCurrentVersion.Name" xml:space="preserve">
+    <value>lblCurrentVersion</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentVersion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCurrentVersion.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnOptions.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="btnOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 298</value>
+  </data>
+  <data name="btnOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 41</value>
+  </data>
+  <data name="btnOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnOptions.Text" xml:space="preserve">
+    <value>CONFIGURAÇÂO</value>
+  </data>
+  <data name="&gt;&gt;btnOptions.Name" xml:space="preserve">
+    <value>btnOptions</value>
+  </data>
+  <data name="&gt;&gt;btnOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnOptions.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Courier New, 9.75pt, style=Bold</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>458, 149</value>
+    <value>458, 87</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 16</value>
+    <value>104, 16</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
-    <value>label2</value>
+    <value>status_login</value>
   </data>
   <data name="label9.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -172,43 +310,64 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;img_senha.Name" xml:space="preserve">
+    <value>img_senha</value>
+  </data>
+  <data name="&gt;&gt;img_senha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;img_senha.Parent" xml:space="preserve">
+    <value>background2</value>
+  </data>
+  <data name="&gt;&gt;img_senha.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="Login_Start.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;Pass.Name" xml:space="preserve">
+    <value>Pass</value>
   </data>
-  <data name="Login_Start.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;Pass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Login_Start.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Courier New, 14.25pt, style=Bold</value>
+  <data name="&gt;&gt;Pass.Parent" xml:space="preserve">
+    <value>background2</value>
   </data>
-  <data name="Login_Start.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;Pass.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="Login_Start.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 305</value>
+  <data name="&gt;&gt;fillet2.Name" xml:space="preserve">
+    <value>fillet2</value>
   </data>
-  <data name="Login_Start.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 36</value>
+  <data name="&gt;&gt;fillet2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Login_Start.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
+  <data name="&gt;&gt;fillet2.Parent" xml:space="preserve">
+    <value>background2</value>
   </data>
-  <data name="Login_Start.Text" xml:space="preserve">
-    <value>INICIAR O JOGO</value>
+  <data name="&gt;&gt;fillet2.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;Login_Start.Name" xml:space="preserve">
-    <value>Login_Start</value>
+  <data name="background2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 172</value>
   </data>
-  <data name="&gt;&gt;Login_Start.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="background2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 65</value>
   </data>
-  <data name="&gt;&gt;Login_Start.Parent" xml:space="preserve">
+  <data name="background2.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;background2.Name" xml:space="preserve">
+    <value>background2</value>
+  </data>
+  <data name="&gt;&gt;background2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;background2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Login_Start.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;background2.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="img_senha.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -238,7 +397,7 @@
     <value>0</value>
   </data>
   <data name="Pass.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Light, 14.25pt</value>
+    <value>Courier New, 14.25pt</value>
   </data>
   <data name="Pass.Location" type="System.Drawing.Point, System.Drawing">
     <value>70, 15</value>
@@ -247,7 +406,7 @@
     <value>*</value>
   </data>
   <data name="Pass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 33</value>
+    <value>150, 29</value>
   </data>
   <data name="Pass.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -288,26 +447,62 @@
   <data name="&gt;&gt;fillet2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="background2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 234</value>
+  <data name="&gt;&gt;img_email.Name" xml:space="preserve">
+    <value>img_email</value>
   </data>
-  <data name="background2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 65</value>
+  <data name="&gt;&gt;img_email.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="background2.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
+  <data name="&gt;&gt;img_email.Parent" xml:space="preserve">
+    <value>Background1</value>
   </data>
-  <data name="&gt;&gt;background2.Name" xml:space="preserve">
-    <value>background2</value>
+  <data name="&gt;&gt;img_email.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;background2.Type" xml:space="preserve">
+  <data name="&gt;&gt;User.Name" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="&gt;&gt;User.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;User.Parent" xml:space="preserve">
+    <value>Background1</value>
+  </data>
+  <data name="&gt;&gt;User.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;fillet1.Name" xml:space="preserve">
+    <value>fillet1</value>
+  </data>
+  <data name="&gt;&gt;fillet1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;background2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;fillet1.Parent" xml:space="preserve">
+    <value>Background1</value>
+  </data>
+  <data name="&gt;&gt;fillet1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Background1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 103</value>
+  </data>
+  <data name="Background1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 63</value>
+  </data>
+  <data name="Background1.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;Background1.Name" xml:space="preserve">
+    <value>Background1</value>
+  </data>
+  <data name="&gt;&gt;Background1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Background1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;background2.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;Background1.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="img_email.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -337,13 +532,13 @@
     <value>0</value>
   </data>
   <data name="User.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Light, 14.25pt</value>
+    <value>Courier New, 14.25pt</value>
   </data>
   <data name="User.Location" type="System.Drawing.Point, System.Drawing">
     <value>70, 14</value>
   </data>
   <data name="User.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 33</value>
+    <value>150, 29</value>
   </data>
   <data name="User.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -384,32 +579,11 @@
   <data name="&gt;&gt;fillet1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="Background1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 165</value>
-  </data>
-  <data name="Background1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 63</value>
-  </data>
-  <data name="Background1.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="&gt;&gt;Background1.Name" xml:space="preserve">
-    <value>Background1</value>
-  </data>
-  <data name="&gt;&gt;Background1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Background1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Background1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="logo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="logo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>422, 79</value>
+    <value>12, 12</value>
   </data>
   <data name="logo.Size" type="System.Drawing.Size, System.Drawing">
     <value>284, 56</value>
@@ -427,16 +601,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;logo.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>16</value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>422, 141</value>
+    <value>422, 79</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 186</value>
+    <value>286, 213</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -451,7 +628,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="Login_Start_Off.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -463,7 +640,7 @@
     <value>NoControl</value>
   </data>
   <data name="Login_Start_Off.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 305</value>
+    <value>438, 243</value>
   </data>
   <data name="Login_Start_Off.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 36</value>
@@ -484,7 +661,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Login_Start_Off.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="wbLauncher.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 79</value>
@@ -508,7 +685,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;wbLauncher.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="Minimized.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -595,7 +772,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Minimized.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="fechar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -628,79 +805,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;fechar.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
-  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 17</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
   </data>
-  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 21</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
-    <value>progressBar1</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="lblCurrentVersion.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblCurrentVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 0</value>
-  </data>
-  <data name="lblCurrentVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 13</value>
-  </data>
-  <data name="lblCurrentVersion.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="lblCurrentVersion.Text" xml:space="preserve">
-    <value>Current Version : </value>
-  </data>
-  <data name="&gt;&gt;lblCurrentVersion.Name" xml:space="preserve">
-    <value>lblCurrentVersion</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentVersion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentVersion.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentVersion.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblCurrentSize.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblCurrentSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 0</value>
-  </data>
-  <data name="lblCurrentSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
-  </data>
-  <data name="lblCurrentSize.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentSize.Name" xml:space="preserve">
-    <value>lblCurrentSize</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentSize.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;lblCurrentSize.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 354</value>
@@ -721,88 +838,169 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
-  <data name="btnOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>610, 385</value>
-  </data>
-  <data name="btnOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 23</value>
-  </data>
-  <data name="btnOptions.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="btnOptions.Text" xml:space="preserve">
-    <value>Options</value>
-  </data>
-  <data name="&gt;&gt;btnOptions.Name" xml:space="preserve">
-    <value>btnOptions</value>
-  </data>
-  <data name="&gt;&gt;btnOptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnOptions.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnOptions.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="lblPercentage.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblPercentage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>576, 256</value>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Courier New, 9.75pt</value>
   </data>
-  <data name="lblPercentage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 0</value>
   </data>
-  <data name="lblPercentage.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 16</value>
   </data>
-  <data name="&gt;&gt;lblPercentage.Name" xml:space="preserve">
-    <value>lblPercentage</value>
-  </data>
-  <data name="&gt;&gt;lblPercentage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPercentage.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblPercentage.ZOrder" xml:space="preserve">
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="btnStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 2</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Status:</value>
   </data>
-  <data name="btnStart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 70</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
   </data>
-  <data name="btnStart.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnStart.Text" xml:space="preserve">
-    <value>Start</value>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
-  <data name="&gt;&gt;btnStart.Name" xml:space="preserve">
-    <value>btnStart</value>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;btnStart.Type" xml:space="preserve">
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>550, 298</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 41</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>SITE</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnStart.Parent" xml:space="preserve">
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnStart.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>638, 298</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 41</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>FORUM</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>720, 420</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAICAQAAEABADoAgAAJgAAACAgAAABAAgAqAgAAA4DAAAoAAAAIAAAAEAAAAABAAQAAAAAAIAC
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAMDAwACAgIAAAAD/AAD/
+        AAAA//8A/wAAAP8A/wD//wAA////AAiAAAAAAAAAAAAAAAAAAAAJmZmf/3d3d3d3d393d3dwCQAAAAAA
+        AAAAAAAAAAAAcAkHd3cRERFwAIf/eICBgHAJB3d3ARERgABwCIeAgYDwCQd3d3ABEYh3iIgQcIEQ8AcH
+        d3d3cIh3d3d4gYgREPAHB3d3d3h3d3d3d4iIARDwBwd3d3eHeHd3d3d4iIiA8AcHF3d3h3//d//3cXh4
+        gPAHBxd3d4f/93E//xF3iIDwBwcXd3eH93dwH/ERj4hw8AcHF3cXc/d3cBEREYjxEPAHBxF3F3D3cRAR
+        ERiI+BDwBwcRdxFwF3cREYGIGHEQ8AcHEXcREBd//xERcYiBEPgHBxgXCBCH////F/iIERD4BwcYgRAR
+        h3//9x/xgREQ+AcHcXgQCHd393cfcYEREHgHB3F3gQh3d3hxhxERERB4Bwdxf/gREXcRGIEREREQeAeH
+        dw//dxERF4h4GIEYgHgHeIgRj3GBgReBeIiIEYB4D4f/gRAYgXEXgXeAF4EQeA+HcRABh4h4H3CHgQh4
+        EHgPh3d3AXcX+A9wj3EBhxB4Dwd3dwj4B/gPcBf4AYdweA8Hd3AX8Q9wB3AI+BAYcHgPB3dwH3AfcBdw
+        CHdwARB4DwAAAAAAAAAAAAAAAAAAeA//////////////93d3d3gAAACIiIiIiIiIiIiIiIiIAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAoAAAAIAAAAEAAAAABAAgAAAAAAIAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAA
+        AACAAIAAgIAAAMDAwADA3MAA8MqmAAQEBAAICAgADAwMABEREQAWFhYAHBwcACIiIgApKSkAVVVVAE1N
+        TQBCQkIAOTk5AIB8/wBQUP8AkwDWAP/szADG1u8A1ufnAJCprQAAADMAAABmAAAAmQAAAMwAADMAAAAz
+        MwAAM2YAADOZAAAzzAAAM/8AAGYAAABmMwAAZmYAAGaZAABmzAAAZv8AAJkAAACZMwAAmWYAAJmZAACZ
+        zAAAmf8AAMwAAADMMwAAzGYAAMyZAADMzAAAzP8AAP9mAAD/mQAA/8wAMwAAADMAMwAzAGYAMwCZADMA
+        zAAzAP8AMzMAADMzMwAzM2YAMzOZADMzzAAzM/8AM2YAADNmMwAzZmYAM2aZADNmzAAzZv8AM5kAADOZ
+        MwAzmWYAM5mZADOZzAAzmf8AM8wAADPMMwAzzGYAM8yZADPMzAAzzP8AM/8zADP/ZgAz/5kAM//MADP/
+        /wBmAAAAZgAzAGYAZgBmAJkAZgDMAGYA/wBmMwAAZjMzAGYzZgBmM5kAZjPMAGYz/wBmZgAAZmYzAGZm
+        ZgBmZpkAZmbMAGaZAABmmTMAZplmAGaZmQBmmcwAZpn/AGbMAABmzDMAZsyZAGbMzABmzP8AZv8AAGb/
+        MwBm/5kAZv/MAMwA/wD/AMwAmZkAAJkzmQCZAJkAmQDMAJkAAACZMzMAmQBmAJkzzACZAP8AmWYAAJlm
+        MwCZM2YAmWaZAJlmzACZM/8AmZkzAJmZZgCZmZkAmZnMAJmZ/wCZzAAAmcwzAGbMZgCZzJkAmczMAJnM
+        /wCZ/wAAmf8zAJnMZgCZ/5kAmf/MAJn//wDMAAAAmQAzAMwAZgDMAJkAzADMAJkzAADMMzMAzDNmAMwz
+        mQDMM8wAzDP/AMxmAADMZjMAmWZmAMxmmQDMZswAmWb/AMyZAADMmTMAzJlmAMyZmQDMmcwAzJn/AMzM
+        AADMzDMAzMxmAMzMmQDMzMwAzMz/AMz/AADM/zMAmf9mAMz/mQDM/8wAzP//AMwAMwD/AGYA/wCZAMwz
+        AAD/MzMA/zNmAP8zmQD/M8wA/zP/AP9mAAD/ZjMAzGZmAP9mmQD/ZswAzGb/AP+ZAAD/mTMA/5lmAP+Z
+        mQD/mcwA/5n/AP/MAAD/zDMA/8xmAP/MmQD/zMwA/8z/AP//MwDM/2YA//+ZAP//zABmZv8AZv9mAGb/
+        /wD/ZmYA/2b/AP//ZgAhAKUAX19fAHd3dwCGhoYAlpaWAMvLywCysrIA19fXAN3d3QDj4+MA6urqAPHx
+        8QD4+PgA8Pv/AKSgoACAgIAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAoTEwoKCgoKCgoKCgoK
+        CgoKCgoKCgoKCgoKCgoKCgoKCk1NTU1NTfT09PHx8fHx8fHx8fHx8fH0GhoaGhoaGgoKTQoKCgoKCgoK
+        CgoKCgoKCgoKCgoKCgoKCgoKCgoaCgpNCrW1tbW1REREREVEvUNDQxO9///vE+pDdEVuChoKCk0KtbW1
+        tbUQRERERER0Q0NDvUND6urvbkN0RG4K/woKTQq1tbW1tbUQEERERG5vk5Nvb24SREPvQ3RERQr/Cgp1
+        CrW1tbW1tbW1EG5vmpqampqTk29uRBJ0REVFCv8KCnUKtbW1tbW1tbUSkxqTmpqampqTk29ubhIQREQK
+        /woK8Qq1tbW1tbW1EpOabxoaGhqampqTk29vb28SEgr/CgrxCrVFtbW1tbVuGhr/w8Madf//w5qTRZNv
+        k28SCv8KCvEKtUW1tbW1tW4aw8PDGppFTP//w0VFk3Vub28K/woK8Qq1RbW1tbW1bhr/GhqamhBF/8NF
+        REVvw29vmgr/CgrxCrVFtbW1RLW1S/+ampqTEERFRURERW9uw0VFCv8KCvEKtUVEtbVEtbUQ/5qaREQQ
+        REREREVvb27Db0UK/woK8Qq1RUS1tUVEtRBEmhqaRERERG9FdG9EbnVFRQr/CgrxCrVFRbW1RUREEESa
+        GsPDw0RERER1RG9ub0VECv8TCvEKtUVvRLURb0QQb5rD/////8NFdcNvbm5ERUUK/xMK8Qq1RW9vREQR
+        RURvGhrDw8PDmkX/w0VuRERFRAr/EwrxCrW1RXVvRRERbpMaGhrDGpqTRcN1RW5EREVFCsITCvEKtbVE
+        dXVvRRFvk5OampNvk0VvdUVFRUVERUUKwm0K8Qq1tUR1w8NvRUVFRZOTRUVFb29FRUVFRERFRQrCbQrx
+        b7W1tRHDw8N1dUVFRUVFdW9vdW9Fb29FRW9vCsJtCvF1b29vRUVvw3VFb0VvRUWab0Wab29vb29FRW8K
+        wm0KwxN1w8NvRUURRW9vRXVFRZpvRZp1bxFFmm9FRQrCbQrDE7W1RUUREUVvmm9vmm9Fw5QRb5pvRRFv
+        mm9ECsLsCsMTtbW1tbURRZqaRZrDbxHDlBFvw3VFEUVvmkUKwuwKwwq1tbW1tRFvw28RmsNvEcOaEUWa
+        w28RRG+amgrC7ArDCrW1tbURRZrDRRHDmhERmpoREW/Db0URRG+aCsLsCsMKtbW1tRFFw5oRRcOaEUV1
+        mhERb5p1dRERREUKwuwKwwoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgrC7ArDw8P/////////////
+        ////////////wsLCwsLCwsLsCgoKCgoKbW1tbezs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OwAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>RO Launcher</value>
-  </data>
-  <data name="&gt;&gt;skinningManager.Name" xml:space="preserve">
-    <value>skinningManager</value>
-  </data>
-  <data name="&gt;&gt;skinningManager.Type" xml:space="preserve">
-    <value>SkinFramework.SkinningManager, SkinFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmLauncher</value>

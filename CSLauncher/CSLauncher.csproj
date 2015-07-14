@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ragnarok.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="NUnrar.3.5">
       <HintPath>..\RarExtracter\bin\Debug\NUnrar.3.5.dll</HintPath>
@@ -104,6 +107,9 @@
     <Content Include="Configs\remote\DeleteConfig.txt" />
     <Content Include="Configs\remote\RemoteConfig.txt" />
     <Content Include="Configs\local\Version.txt" />
+    <Content Include="ragnarok.ico" />
+    <None Include="Resources\appbar.interface.textbox.png" />
+    <None Include="Resources\appbar.interface.password.png" />
     <None Include="Resources\painel_login.png" />
     <None Include="Resources\menu_login.png" />
     <None Include="Resources\logo.png" />

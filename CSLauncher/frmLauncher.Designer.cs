@@ -36,7 +36,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLauncher));
-           // this.skinningManager = new SkinFramework.SkinningManager();
             this.lblPercentage = new System.Windows.Forms.Label();
             this.lblCurrentSize = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
@@ -44,7 +43,6 @@
             this.lblCurrentVersion = new System.Windows.Forms.Label();
             this.btnOptions = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.Login_Start = new System.Windows.Forms.Button();
             this.background2 = new System.Windows.Forms.Panel();
             this.img_senha = new System.Windows.Forms.PictureBox();
             this.Pass = new System.Windows.Forms.TextBox();
@@ -60,6 +58,9 @@
             this.Minimized = new System.Windows.Forms.Button();
             this.fechar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.background2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_senha)).BeginInit();
             this.Background1.SuspendLayout();
@@ -69,11 +70,6 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // skinningManager
-            // 
-           // this.skinningManager.DefaultSkin = SkinFramework.DefaultSkin.Office2007Luna;
-           // this.skinningManager.ParentForm = this;
-            // 
             // lblPercentage
             // 
             resources.ApplyResources(this.lblPercentage, "lblPercentage");
@@ -82,6 +78,7 @@
             // lblCurrentSize
             // 
             resources.ApplyResources(this.lblCurrentSize, "lblCurrentSize");
+            this.lblCurrentSize.BackColor = System.Drawing.Color.Transparent;
             this.lblCurrentSize.Name = "lblCurrentSize";
             // 
             // btnStart
@@ -99,6 +96,7 @@
             // lblCurrentVersion
             // 
             resources.ApplyResources(this.lblCurrentVersion, "lblCurrentVersion");
+            this.lblCurrentVersion.BackColor = System.Drawing.Color.Transparent;
             this.lblCurrentVersion.Name = "lblCurrentVersion";
             // 
             // btnOptions
@@ -115,15 +113,6 @@
             this.label9.ForeColor = System.Drawing.Color.Red;
             this.label9.Name = "label9";
             // 
-            // Login_Start
-            // 
-            this.Login_Start.BackColor = System.Drawing.Color.SeaGreen;
-            resources.ApplyResources(this.Login_Start, "Login_Start");
-            this.Login_Start.FlatAppearance.BorderSize = 0;
-            this.Login_Start.ForeColor = System.Drawing.Color.White;
-            this.Login_Start.Name = "Login_Start";
-            this.Login_Start.UseVisualStyleBackColor = false;
-            // 
             // background2
             // 
             this.background2.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -135,6 +124,7 @@
             // 
             // img_senha
             // 
+            this.img_senha.Image = global::CSLauncher.Properties.Resources.appbar_interface_password;
             resources.ApplyResources(this.img_senha, "img_senha");
             this.img_senha.Name = "img_senha";
             this.img_senha.TabStop = false;
@@ -143,8 +133,10 @@
             // 
             this.Pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.Pass, "Pass");
-            this.Pass.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Pass.ForeColor = System.Drawing.Color.Black;
             this.Pass.Name = "Pass";
+            this.Pass.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Pass_MouseClick);
+            this.Pass.TextChanged += new System.EventHandler(this.Pass_TextChanged);
             // 
             // fillet2
             // 
@@ -163,6 +155,7 @@
             // 
             // img_email
             // 
+            this.img_email.Image = global::CSLauncher.Properties.Resources.appbar_interface_textbox;
             resources.ApplyResources(this.img_email, "img_email");
             this.img_email.Name = "img_email";
             this.img_email.TabStop = false;
@@ -171,8 +164,10 @@
             // 
             this.User.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.User, "User");
-            this.User.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.User.ForeColor = System.Drawing.Color.Black;
             this.User.Name = "User";
+            this.User.MouseClick += new System.Windows.Forms.MouseEventHandler(this.User_MouseClick);
+            this.User.TextChanged += new System.EventHandler(this.User_TextChanged);
             // 
             // fillet1
             // 
@@ -183,6 +178,7 @@
             // logo
             // 
             this.logo.BackColor = System.Drawing.Color.Transparent;
+            this.logo.Image = global::CSLauncher.Properties.Resources.logo;
             resources.ApplyResources(this.logo, "logo");
             this.logo.Name = "logo";
             this.logo.TabStop = false;
@@ -190,6 +186,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::CSLauncher.Properties.Resources.menu_login;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
@@ -207,7 +204,7 @@
             // 
             resources.ApplyResources(this.wbLauncher, "wbLauncher");
             this.wbLauncher.Name = "wbLauncher";
-            this.wbLauncher.Url = new System.Uri("", System.UriKind.Relative);
+            this.wbLauncher.Url = new System.Uri("http://www.lambero.com.br/newpatch/novidades.php", System.UriKind.Absolute);
             // 
             // Minimized
             // 
@@ -217,6 +214,7 @@
             this.Minimized.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.Minimized.Name = "Minimized";
             this.Minimized.UseVisualStyleBackColor = false;
+            this.Minimized.Click += new System.EventHandler(this.Minimized_Click);
             // 
             // fechar
             // 
@@ -227,26 +225,49 @@
             resources.ApplyResources(this.fechar, "fechar");
             this.fechar.Name = "fechar";
             this.fechar.UseVisualStyleBackColor = false;
+            this.fechar.Click += new System.EventHandler(this.fechar_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.progressBar1);
-            this.panel1.Controls.Add(this.lblCurrentVersion);
-            this.panel1.Controls.Add(this.lblCurrentSize);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Name = "label1";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmLauncher
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CSLauncher.Properties.Resources.backgroundimg;
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.Login_Start);
+            this.Controls.Add(this.lblCurrentVersion);
+            this.Controls.Add(this.lblCurrentSize);
             this.Controls.Add(this.background2);
             this.Controls.Add(this.Background1);
-            this.Controls.Add(this.logo);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Login_Start_Off);
             this.Controls.Add(this.wbLauncher);
@@ -255,12 +276,15 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnOptions);
             this.Controls.Add(this.lblPercentage);
-            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.logo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "frmLauncher";
             this.TransparencyKey = System.Drawing.Color.DimGray;
             this.Load += new System.EventHandler(this.frmLauncher_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmLauncher_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmLauncher_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.frmLauncher_MouseUp);
             this.background2.ResumeLayout(false);
             this.background2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_senha)).EndInit();
@@ -285,7 +309,6 @@
         private System.Windows.Forms.Label lblCurrentVersion;
         private System.Windows.Forms.Button btnOptions;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button Login_Start;
         private System.Windows.Forms.Panel background2;
         private System.Windows.Forms.PictureBox img_senha;
         private System.Windows.Forms.TextBox Pass;
@@ -301,6 +324,9 @@
         private System.Windows.Forms.Button Minimized;
         private System.Windows.Forms.Button fechar;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
