@@ -230,8 +230,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SeaGreen;
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblCurrentSize);
             this.panel1.Controls.Add(this.progressBar1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblCurrentVersion);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
@@ -264,8 +266,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.lblCurrentVersion);
-            this.Controls.Add(this.lblCurrentSize);
             this.Controls.Add(this.background2);
             this.Controls.Add(this.Background1);
             this.Controls.Add(this.pictureBox1);

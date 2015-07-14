@@ -152,7 +152,7 @@ namespace CSLauncher
             string Username = User.Text;
             string Password = Pass.Text;
 
-            string Risposta = new WebClient().DownloadString("http://127.0.0.1/patcher/login/login.php?username=" + Username + "&password=" + Password);
+            string Risposta = new WebClient().DownloadString("http://www.lambero.com.br/newpatch/login/login.php?username=" + Username + "&password=" + Password);
             switch (Risposta.ToLower())
             {
                 case "1":
